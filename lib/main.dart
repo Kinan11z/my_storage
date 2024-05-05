@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_storage/core/constant/app_theme.dart';
+import 'package:my_storage/views/screens/login_screen.dart';
 import 'package:my_storage/views/screens/onboarding_screen.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyStorage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const OnBoarding(),
+      home: const Login(),
       theme: appTheme,
     );
   }
