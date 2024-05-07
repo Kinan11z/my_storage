@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_storage/core/constant/app_styles.dart';
-import 'package:my_storage/views/screens/homepage.dart';
+//import 'package:my_storage/views/screens/homepage.dart';
+import 'package:my_storage/views/screens/login_screen.dart';
 import 'package:my_storage/views/widgets/custom_onboarding_button.dart';
 import 'package:my_storage/views/widgets/logo_store.dart';
 
@@ -31,7 +32,7 @@ class OnBoarding extends StatelessWidget {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const HomePage(),
+                      builder: (context) => const Login(),
                     ),
                   );
                 },

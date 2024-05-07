@@ -1,10 +1,10 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:my_storage/core/constant/app_colors.dart';
 import 'package:my_storage/core/constant/app_images.dart';
+import 'package:my_storage/views/screens/homepage.dart';
+import 'package:my_storage/views/screens/singup_screen.dart';
+import 'package:my_storage/views/widgets/custom_onboarding_button.dart';
 import 'package:my_storage/views/widgets/custom_small_button.dart';
 import 'package:my_storage/views/widgets/custom_text_form_field.dart';
 
@@ -62,12 +62,17 @@ class Login extends StatelessWidget {
                 ),
                 SizedBox(
                   width: width * 0.8,
-                  child: CustomSmallButton(
+                  child: CustomOnBoardingButton(
                     onTap: () {
-                      Navigator.pop(context);
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomePage(),
+                        ),
+                      );
                     },
                     text: "تسجيل",
-                    backgroundColor: AppColors.primaryColor,
+                    // backgroundColor: AppColors.primaryColor,
                   ),
                 ),
                 const SizedBox(
@@ -77,7 +82,11 @@ class Login extends StatelessWidget {
                   width: width * 0.8,
                   child: CustomSmallButton(
                     onTap: () {
-                      Navigator.pop(context);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SingUp(),
+                          ));
                     },
                     text: "انشاء حساب ",
                     backgroundColor: AppColors.buttonColor,
