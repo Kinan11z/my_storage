@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_storage/core/constant/app_colors.dart';
 import 'package:my_storage/core/constant/app_styles.dart';
 import 'package:my_storage/views/screens/add_product.dart';
+import 'package:my_storage/views/widgets/custom_drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,6 +10,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const Drawer(
+        child: CustomDrawer(),
+      ),
       appBar: AppBar(
         actions: [
           Padding(
