@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_storage/core/constant/app_theme.dart';
 import 'package:my_storage/views/screens/add_product.dart';
+import 'package:my_storage/views/screens/homepage.dart';
 import 'package:my_storage/views/screens/login_screen.dart';
 import 'package:my_storage/views/screens/onboarding_screen.dart';
 import 'package:my_storage/views/screens/products.dart';
@@ -18,7 +19,7 @@ class MyStorage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const OnBoarding(),
+      home: const HomePage(),
       theme: appTheme,
     );
   }

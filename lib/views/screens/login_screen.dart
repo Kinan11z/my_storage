@@ -72,7 +72,6 @@ class Login extends StatelessWidget {
                       );
                     },
                     text: "تسجيل",
-                    // backgroundColor: AppColors.primaryColor,
                   ),
                 ),
                 const SizedBox(
